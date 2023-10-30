@@ -3,15 +3,15 @@ const router = express.Router();
 
 // Controller
 const {
-  renderNoteForm,
-  createNewNote,
-  renderNotes,
-  renderEditForm,
-  updateNote,
-  deleteNote,
-  updateStatus,
-  renderNotesgrids,
-  renderNotesNetwork
+    renderNoteForm,
+    createNewNote,
+    renderNotes,
+    renderEditForm,
+    updateNote,
+    deleteNote,
+    updateStatus,
+    renderNotesgrids,
+    renderNotesNetwork
 } = require("../controllers/notes.controller");
 
 // Helpers
@@ -28,7 +28,7 @@ router.get("/notes", isAuthenticated, renderNotes);
 // router.get("/demo", isAuthenticated, renderNotes);
 
 // Edit Notes
-router.get("/notes/edit/:id",isAuthenticated, renderEditForm);
+router.get("/notes/edit/:id", isAuthenticated, renderEditForm);
 
 router.put("/notes/edit-note/:id", isAuthenticated, updateNote);
 
