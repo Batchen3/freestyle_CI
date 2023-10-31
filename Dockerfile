@@ -1,4 +1,4 @@
-FROM node:18-slim
+FROM node:18-slim 
 
 WORKDIR /usr/src/app
 
@@ -9,7 +9,7 @@ RUN npm install
 RUN npm i -D handlebars@4.5.0
 
 COPY . .
-
+# localhost//:4000
 EXPOSE 4000
 
 CMD [ "node", "index.js" ]
