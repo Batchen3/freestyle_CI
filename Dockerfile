@@ -12,5 +12,5 @@ RUN npm i -D handlebars@4.5.0
 COPY . .
 # localhost//:4000
 EXPOSE 4000
-
+# to run
 CMD [ "node", "index.js" ]
