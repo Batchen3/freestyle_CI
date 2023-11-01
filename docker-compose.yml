@@ -17,8 +17,7 @@ services:
 volumes:
   mongodb:
 
-# docker-compose
-# ----------------------------------------
+
 # 
 #  - DATABASE_CONNECTIONSTRING=mongodb://mongo:27017/notes  
 # version: '3'
